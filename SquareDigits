@@ -1,0 +1,12 @@
+let n = squareDigits(9119)
+
+function squareDigits(n) {
+  let result = "";
+  n = n.toString();
+  for (let i = 0; i < n.length; i++) {
+    result += parseInt(n[i]) ** 2;
+  }
+  return result;
+}
+
+console.log(n)
