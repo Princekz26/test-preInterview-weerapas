@@ -1,0 +1,10 @@
+let reverse = reverseString("This is an example!");
+
+function reverseString(str) {
+  let str_reverse = str.split("").reverse().join("");
+  let str_reverse1 =  str_reverse.split(" ")
+      str_reverse1 = str_reverse1.reverse().join(" ");
+  return str_reverse1
+}
+
+console.log(reverse)
