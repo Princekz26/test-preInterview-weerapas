@@ -1,0 +1,22 @@
+let sumWord1 = sumWord(“this is a word”)
+
+function sumWord(str){
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  let spt = str.toLowerCase().split(" ");
+  let max = -1;
+  let wordMax = "";
+  for (let i = 0; i < spt.length; i++) {
+  	const item = spt[i];
+    let summary = 0;
+    for (let i = 0; i < item.length; i++) {
+      summary += alphabet.indexOf(item[i]) + 1;
+    }
+    if (summary > max) {
+      max = summary;
+      wordMax = item;
+    }
+  }
+  return wordMax;
+}
+
+console.log(sumWord1)
